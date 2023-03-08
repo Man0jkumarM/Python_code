@@ -1,0 +1,7 @@
+print("Welcome to life in weeks!")
+age=int(input("Enter your current age:\n"))
+balance_years=90-age
+months=balance_years*12
+weeks=balance_years*52
+days=balance_years*365
+print(f"you have {balance_years} years, {months} monhts, {weeks} weeks, {days} days left.")
