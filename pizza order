@@ -1,0 +1,23 @@
+print("Welcome to pizza deliveries!")
+size = str(input("Enter the size of the pizza whether it is S or M or L:\n"))
+add_pepperoni = str(input("Enter you want to add pepperoni? Y or N:\n"))
+extra_cheese = str(input("Enter ypu want extra cheese? Y or N:\n"))
+bill = 0
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+else:
+    bill
+if extra_cheese == "Y":
+    bill += 1
+else:
+    bill
+print(f"Your bill amount is {bill}.")
